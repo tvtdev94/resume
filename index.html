@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan Tran • Full Stack Developer</title>
+    <meta name="description" content="Tuan Tran - Full Stack Developer with 8+ years of experience developing modern web applications">
+    <meta name="keywords" content="Full Stack Developer, React, .NET Core, Angular, TypeScript, Vietnam Developer">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tuantran.net">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuantran.net">
+    <meta property="og:title" content="Tuan Tran - Full Stack Developer | Professional Portfolio">
+    <meta property="og:description" content="Full Stack Developer with 8+ years of experience developing modern web applications using React, .NET Core, and Angular.">
+    <meta property="og:image" content="https://tuantran.net/anh_cv.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tuantran.net">
+    <meta property="twitter:title" content="Tuan Tran - Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer with 8+ years of experience developing modern web applications.">
+    <meta property="twitter:image" content="https://tuantran.net/anh_cv.png">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new-loading.css">
+    
+    <!-- Theme Detection -->
+    <script>
+        // Detect user preference and set initial theme
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="loading-container">
+            <div class="loading-brand">
+                <div class="brand-logo-loading">
+                    <span class="logo-text-loading">
+                        <span class="bracket-char">&lt;</span>
+                        <span class="t-char">T</span>
+                        <span class="bracket-char">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            
+            <p class="loading-text">Crafting digital experiences...</p>
+            
+            <div class="loading-progress-modern">
+                <div class="progress-line"></div>
+            </div>
+            
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-inner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <span class="logo-text">T</span>
+                    <div class="logo-orbit">
+                        <div class="orbit-ring"></div>
+                        <div class="orbit-dot"></div>
+                    </div>
+                </div>
+                <span class="brand-name">Tuan Tran</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">
+                        <span class="link-text">Home</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="link-text">About</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="link-text">Skills</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">
+                        <span class="link-text">Experience</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="link-text">Projects</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="link-text">Contact</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="language-toggle">
+                    <a href="index-vi.html" class="lang-link">VI</a>
+                    <a href="index.html" class="lang-link active">EN</a>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="toggle-icon sun-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="toggle-icon moon-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Left Content -->
+                    <div class="hero-text">
+                        <div class="hero-greeting">
+                            <span class="greeting-icon">👋</span>
+                            <span class="greeting-text">Hello, I'm</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">
+                                <span class="title-word" data-word="Tuan">Tuan</span>
+                                <span class="title-word" data-word="Tran">Tran</span>
+                            </span>
+                        </h1>
+                        
+                        <div class="hero-subtitle">
+                            <span class="subtitle-static">I'm a</span>
+                            <span class="subtitle-dynamic" id="dynamicText">Full Stack Developer</span>
+                            <span class="subtitle-cursor">|</span>
+                        </div>
+                        
+                        <p class="hero-description">
+                            Full Stack Developer with <strong>8+ years of experience</strong>, 
+                            passionate about creating exceptional digital experiences through <em>clean code</em>, 
+                            <em>architectural thinking</em> and <em>modern technologies</em>.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item" data-count="8">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item" data-count="10">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item" data-count="100">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" data-magnetic>
+                                <span class="btn-text">View Projects</span>
+                                <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                                <div class="btn-bg"></div>
+                            </a>
+                            <a href="../resume_tuan.tran.pdf" class="btn btn-secondary" download data-magnetic>
+                                <span class="btn-text">Download CV</span>
+                                <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                <div class="btn-bg"></div>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social">
+                            <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email" data-magnetic>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+84344446301" class="social-link" data-tooltip="Phone" data-magnetic>
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" data-magnetic>
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" data-magnetic>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Content -->
+                    <div class="hero-visual">
+                        <div class="visual-container">
+                            <!-- Profile Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="status-indicator">
+                                        <div class="status-dot"></div>
+                                        <span class="status-text">Available for work</span>
+                                    </div>
+                                </div>
+                                <div class="profile-avatar">
+                                    <div class="avatar-image">
+                                        <img src="anh_cv.png" alt="Tuan Tran - Full Stack Developer" />
+                                    </div>
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-particles">
+                                        <div class="particle"></div>
+                                        <div class="particle"></div>
+                                        <div class="particle"></div>
+                                    </div>
+                                </div>
+                                <div class="profile-info">
+                                    <h3 class="profile-name">Tuan Tran</h3>
+                                    <p class="profile-role">Senior Full Stack Developer</p>
+                                    <div class="profile-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Da Nang, Vietnam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code Terminal -->
+                            <div class="code-terminal">
+                                <div class="terminal-header">
+                                    <div class="terminal-controls">
+                                        <span class="control control-close"></span>
+                                        <span class="control control-minimize"></span>
+                                        <span class="control control-maximize"></span>
+                                    </div>
+                                    <span class="terminal-title">~/portfolio</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="code-line">
+                                        <span class="line-number">1</span>
+                                        <span class="code-text">
+                                            <span class="keyword">const</span>
+                                            <span class="variable">developer</span>
+                                            <span class="operator">=</span>
+                                            <span class="punctuation">{</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">2</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">name</span>:
+                                            <span class="string">'Tuan Tran'</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">3</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">skills</span>:
+                                            <span class="array">[</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">4</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'.NET'</span>,
+                                            <span class="string">'React'</span>,
+                                            <span class="string">'TypeScript'</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">5</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="array">]</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">6</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">passion</span>:
+                                            <span class="string">'Building Amazing Things'</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">7</span>
+                                        <span class="code-text">
+                                            <span class="punctuation">}</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line typing-animation">
+                                        <span class="line-number">8</span>
+                                        <span class="code-text">
+                                            <span class="comment">// Ready to collaborate!</span>
+                                            <span class="cursor-blink">_</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Tech Stack Float -->
+                            <div class="tech-float">
+                                <div class="tech-item" data-tech="React">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="tech-item" data-tech=".NET">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="tech-item" data-tech="TypeScript">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="tech-item" data-tech="Node.js">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My story and development journey</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="text-block">
+                            <h3>Passion for Technology</h3>
+                            <p>
+                                I am a <strong>Full Stack Developer</strong> with over 8 years of experience 
+                                developing large-scale web applications and complex systems. My passion doesn't 
+                                just stop at writing code, but also creating exceptional user experiences.
+                            </p>
+                        </div>
+                        
+                        <div class="text-block">
+                            <h3>Technical Excellence</h3>
+                            <p>
+                                Specialized in <em>Clean Architecture</em>, <em>Domain-Driven Design</em>, and 
+                                <em>Microservices</em>. I believe that code should not only work well but also 
+                                be readable, maintainable and scalable.
+                            </p>
+                        </div>
+                        
+                        <div class="text-block">
+                            <h3>Continuous Learning</h3>
+                            <p>
+                                Technology is always evolving, and I am always learning to stay up-to-date with 
+                                the latest trends. From React/Angular to .NET Core, from SQL Server to NoSQL 
+                                databases - I continuously expand my knowledge to deliver the best value.
+                            </p>
+                        </div>
+                        
+                        <div class="qualities">
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <span class="quality-text">Problem Solver</span>
+                            </div>
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <span class="quality-text">Team Collaborator</span>
+                            </div>
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <span class="quality-text">Innovation Driven</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="journey-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2015</div>
+                                <div class="timeline-content">
+                                    <h4>Starting the journey</h4>
+                                    <p>Joined Enlab Software as a Junior Developer</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2018</div>
+                                <div class="timeline-content">
+                                    <h4>Career advancement</h4>
+                                    <p>Became Senior Developer, leading major projects</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Independence</h4>
+                                    <p>Became Freelance Developer, working on diverse projects</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Present</h4>
+                                    <p>Continuing to grow and learn the latest technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">The tools and technologies I use to build modern applications</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="backend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="category-title">Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">.NET Core</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RESTful APIs</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="frontend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="category-title">Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Angular</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="database">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="category-title">Database & Cloud</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL Server</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Azure</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RavenDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="tools">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="category-title">Tools & Methodologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Agile/Scrum</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Clean Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">Professional development journey and achievements</p>
+                </div>
+                
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="experience-item" data-year="2022">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2022 - Present</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Freelance Full Stack Developer</h3>
+                                <span class="company">Independent</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Leading innovative projects in social commerce, data automation, 
+                                    and super app development. Specializing in full-stack solutions 
+                                    with modern technologies and architectural patterns.
+                                </p>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">LiveCommerce Platform</div>
+                                <div class="highlight-tag">Sun Group Super App</div>
+                                <div class="highlight-tag">Data Crawling Systems</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2015">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2015 - 2022</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Full Stack Engineer</h3>
+                                <span class="company">Enlab Software</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Developed enterprise-level applications for various domains including 
+                                    construction, education, marketing automation, and real estate management.
+                                </p>
+                                <ul class="job-responsibilities">
+                                    <li>Developed new features for client websites using HTML, CSS, JavaScript, Angular, ASP.NET Core</li>
+                                    <li>Built RESTful APIs and designed database schemas</li>
+                                    <li>Collaborated with designers to translate UI/UX wireframes into responsive code</li>
+                                    <li>Participated in Agile/Scrum development process</li>
+                                </ul>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">Property Management System</div>
+                                <div class="highlight-tag">Marketing Automation Platform</div>
+                                <div class="highlight-tag">Education Systems</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2012">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2012 - 2015</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Education</h3>
+                                <span class="company">Vietnam - Korea University</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Bachelor's degree in Information and Communication Technology. 
+                                    Focused on software engineering principles and modern web technologies.
+                                </p>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">Software Engineering</div>
+                                <div class="highlight-tag">Web Development</div>
+                                <div class="highlight-tag">Database Systems</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcase of recent work and technical achievements</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Featured Project -->
+                    <article class="project-card featured" data-project="property">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="View demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Source code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Property Management System</h3>
+                                <span class="project-year">2020-2022</span>
+                            </div>
+                            <p class="project-description">
+                                Integrated property management system for the Australian real estate market. 
+                                Optimized business processes between Property Owners, Agencies, and Tenants 
+                                through digital transformation of traditional paper-based processes.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Role</span>
+                                    <span class="detail-value">Lead Developer</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Team</span>
+                                    <span class="detail-value">3 Developers</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Duration</span>
+                                    <span class="detail-value">18 months</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Azure</span>
+                                <span class="tech-badge">Google Maps API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Regular Projects -->
+                    <article class="project-card" data-project="marketing">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="View demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Source code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Marketing Automation Platform</h3>
+                                <span class="project-year">2017-2018</span>
+                            </div>
+                            <p class="project-description">
+                                Cloud-based marketing automation platform for customer acquisition, 
+                                loyalty building and brand reputation management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="superapp">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="View demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Source code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Sun Group Super App</h3>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <p class="project-description">
+                                Mobile Super App platform transforming multi-domain corporation into 
+                                unified digital ecosystem with microservices architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Microservices</span>
+                                <span class="tech-badge">Azure</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="livecommerce">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="View demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Source code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">LiveCommerce Platform</h3>
+                                <span class="project-year">2021-2023</span>
+                            </div>
+                            <p class="project-description">
+                                Social commerce platform enabling businesses to showcase products through 
+                                live streaming with real-time customer interaction.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React.js</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">RavenDB</span>
+                                <span class="tech-badge">WebRTC</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Ready to collaborate and create amazing things</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <h3>Let's build something amazing together!</h3>
+                            <p>
+                                I'm always excited about new opportunities and interesting projects. Whether you have 
+                                a specific idea in mind or just want to chat about technology, feel free to reach out!
+                            </p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:tranvantuanit210@gmail.com" class="method-value">
+                                        tranvantuanit210@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+84344446301" class="method-value">
+                                        +84 344 446 301
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">
+                                        Da Nang, Vietnam
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h4>Connect with me</h4>
+                            <div class="social-links">
+                                <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email" data-magnetic>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="tel:+84344446301" class="social-link" data-tooltip="Phone" data-magnetic>
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" data-magnetic>
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" data-magnetic>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link" data-tooltip="Twitter" data-magnetic>
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <h4>Send Message</h4>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Full Name</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="subject" name="subject" required>
+                                    <label for="subject">Subject</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" data-magnetic>
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                <div class="btn-bg"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <span class="logo-text">T</span>
+                        <div class="logo-orbit">
+                            <div class="orbit-ring"></div>
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                    <span class="brand-name">Tuan Tran</span>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+
+                            <li><a href="#">API Development</a></li>
+                            <li><a href="#">System Architecture</a></li>
+                            <li><a href="#">Technical Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-envelope"></i> tranvantuanit210@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +84 344 446 301</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Da Nang, Vietnam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Tuan Tran. Designed and developed with <span class="heart">❤️</span> and <span class="coffee">☕</span></p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

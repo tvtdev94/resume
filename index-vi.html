@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuấn Trần • Full Stack Developer</title>
+    <meta name="description" content="Tuấn Trần - Full Stack Developer với 8+ năm kinh nghiệm phát triển ứng dụng web hiện đại">
+    <meta name="keywords" content="Full Stack Developer, React, .NET Core, Angular, TypeScript, Lập trình viên Việt Nam">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tuantran.net/index-vi.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuantran.net/index-vi.html">
+    <meta property="og:title" content="Tuấn Trần - Full Stack Developer | Portfolio Chuyên Nghiệp">
+    <meta property="og:description" content="Full Stack Developer với 8+ năm kinh nghiệm phát triển ứng dụng web hiện đại sử dụng React, .NET Core, và Angular.">
+    <meta property="og:image" content="https://tuantran.net/anh_cv.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tuantran.net/index-vi.html">
+    <meta property="twitter:title" content="Tuấn Trần - Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer với 8+ năm kinh nghiệm phát triển ứng dụng web hiện đại.">
+    <meta property="twitter:image" content="https://tuantran.net/anh_cv.png">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new-loading.css">
+    
+    <!-- Theme Detection -->
+    <script>
+        // Detect user preference and set initial theme
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="loading-container">
+            <div class="loading-brand">
+                <div class="brand-logo-loading">
+                    <span class="logo-text-loading">
+                        <span class="bracket-char">&lt;</span>
+                        <span class="t-char">T</span>
+                        <span class="bracket-char">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            
+            <p class="loading-text">Đang tạo nên những trải nghiệm số...</p>
+            
+            <div class="loading-progress-modern">
+                <div class="progress-line"></div>
+            </div>
+            
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-inner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <span class="logo-text">T</span>
+                    <div class="logo-orbit">
+                        <div class="orbit-ring"></div>
+                        <div class="orbit-dot"></div>
+                    </div>
+                </div>
+                <span class="brand-name">Tuấn Trần</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">
+                        <span class="link-text">Trang chủ</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="link-text">Giới thiệu</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="link-text">Kỹ năng</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">
+                        <span class="link-text">Kinh nghiệm</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="link-text">Dự án</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="link-text">Liên hệ</span>
+                        <span class="link-bg"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="language-toggle">
+                    <a href="index-vi.html" class="lang-link active">VI</a>
+                    <a href="index.html" class="lang-link">EN</a>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="toggle-icon sun-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="toggle-icon moon-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Left Content -->
+                    <div class="hero-text">
+                        <div class="hero-greeting">
+                            <span class="greeting-icon">👋</span>
+                            <span class="greeting-text">Xin chào, tôi là</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">
+                                <span class="title-word" data-word="Tuấn">Tuấn</span>
+                                <span class="title-word" data-word="Trần">Trần</span>
+                            </span>
+                        </h1>
+                        
+                        <div class="hero-subtitle">
+                            <span class="subtitle-static">Tôi là một</span>
+                            <span class="subtitle-dynamic" id="dynamicText">Full Stack Developer</span>
+                            <span class="subtitle-cursor">|</span>
+                        </div>
+                        
+                        <p class="hero-description">
+                            Full Stack Developer với <strong>8+ năm kinh nghiệm</strong>, 
+                            đam mê tạo ra những trải nghiệm số đặc biệt thông qua <em>code sạch</em>, 
+                            <em>tư duy kiến trúc</em> và <em>công nghệ hiện đại</em>.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item" data-count="8">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Năm kinh nghiệm</span>
+                            </div>
+                            <div class="stat-item" data-count="10">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Dự án hoàn thành</span>
+                            </div>
+                            <div class="stat-item" data-count="100">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Khách hàng hài lòng</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" data-magnetic>
+                                <span class="btn-text">Xem dự án</span>
+                                <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                                <div class="btn-bg"></div>
+                            </a>
+                            <a href="resume_tuan.tran.pdf" class="btn btn-secondary" download data-magnetic>
+                                <span class="btn-text">Tải CV</span>
+                                <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                <div class="btn-bg"></div>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social">
+                            <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email" data-magnetic>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+84344446301" class="social-link" data-tooltip="Điện thoại" data-magnetic>
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" data-magnetic>
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" data-magnetic>
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Content -->
+                    <div class="hero-visual">
+                        <div class="visual-container">
+                            <!-- Profile Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="status-indicator">
+                                        <div class="status-dot"></div>
+                                        <span class="status-text">Sẵn sàng làm việc</span>
+                                    </div>
+                                </div>
+                                <div class="profile-avatar">
+                                    <div class="avatar-image">
+                                        <img src="anh_cv.png" alt="Tuấn Trần - Full Stack Developer" />
+                                    </div>
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-particles">
+                                        <div class="particle"></div>
+                                        <div class="particle"></div>
+                                        <div class="particle"></div>
+                                    </div>
+                                </div>
+                                <div class="profile-info">
+                                    <h3 class="profile-name">Tuấn Trần</h3>
+                                    <p class="profile-role">Senior Full Stack Developer</p>
+                                    <div class="profile-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Đà Nẵng, Việt Nam</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Code Terminal -->
+                            <div class="code-terminal">
+                                <div class="terminal-header">
+                                    <div class="terminal-controls">
+                                        <span class="control control-close"></span>
+                                        <span class="control control-minimize"></span>
+                                        <span class="control control-maximize"></span>
+                                    </div>
+                                    <span class="terminal-title">~/portfolio</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="code-line">
+                                        <span class="line-number">1</span>
+                                        <span class="code-text">
+                                            <span class="keyword">const</span>
+                                            <span class="variable">developer</span>
+                                            <span class="operator">=</span>
+                                            <span class="punctuation">{</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">2</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">name</span>:
+                                            <span class="string">'Tuấn Trần'</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">3</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">skills</span>:
+                                            <span class="array">[</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">4</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">'.NET'</span>,
+                                            <span class="string">'React'</span>,
+                                            <span class="string">'TypeScript'</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">5</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="array">]</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">6</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">passion</span>:
+                                            <span class="string">'Xây dựng những điều tuyệt vời'</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">7</span>
+                                        <span class="code-text">
+                                            <span class="punctuation">}</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line typing-animation">
+                                        <span class="line-number">8</span>
+                                        <span class="code-text">
+                                            <span class="comment">// Sẵn sàng hợp tác!</span>
+                                            <span class="cursor-blink">_</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Tech Stack Float -->
+                            <div class="tech-float">
+                                <div class="tech-item" data-tech="React">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="tech-item" data-tech=".NET">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="tech-item" data-tech="TypeScript">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="tech-item" data-tech="Node.js">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text">Cuộn để khám phá</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Giới thiệu</h2>
+                    <p class="section-subtitle">Câu chuyện và hành trình phát triển của tôi</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="text-block">
+                            <h3>Đam mê công nghệ</h3>
+                            <p>
+                                Tôi là một <strong>Full Stack Developer</strong> với hơn 8 năm kinh nghiệm 
+                                phát triển các ứng dụng web quy mô lớn và hệ thống phức tạp. Đam mê của tôi không 
+                                chỉ dừng lại ở việc viết code, mà còn là tạo ra những trải nghiệm người dùng xuất sắc.
+                            </p>
+                        </div>
+                        
+                        <div class="text-block">
+                            <h3>Chuyên môn kỹ thuật</h3>
+                            <p>
+                                Chuyên sâu về <em>Clean Architecture</em>, <em>Domain-Driven Design</em>, và 
+                                <em>Microservices</em>. Tôi tin rằng code không chỉ hoạt động tốt mà còn phải 
+                                dễ đọc, dễ bảo trì và có thể mở rộng.
+                            </p>
+                        </div>
+                        
+                        <div class="text-block">
+                            <h3>Học hỏi không ngừng</h3>
+                            <p>
+                                Công nghệ luôn phát triển, và tôi luôn học hỏi để cập nhật với các xu hướng mới nhất. 
+                                Từ React/Angular đến .NET Core, từ SQL Server đến NoSQL databases - tôi không ngừng 
+                                mở rộng kiến thức để mang lại giá trị tốt nhất.
+                            </p>
+                        </div>
+                        
+                        <div class="qualities">
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <span class="quality-text">Giải quyết vấn đề</span>
+                            </div>
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <span class="quality-text">Hợp tác nhóm</span>
+                            </div>
+                            <div class="quality-item">
+                                <div class="quality-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <span class="quality-text">Đổi mới sáng tạo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="journey-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2015</div>
+                                <div class="timeline-content">
+                                    <h4>Bắt đầu hành trình</h4>
+                                    <p>Gia nhập Enlab Software với vai trò Junior Developer</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2018</div>
+                                <div class="timeline-content">
+                                    <h4>Phát triển sự nghiệp</h4>
+                                    <p>Trở thành Senior Developer, dẫn dắt các dự án lớn</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Tự do</h4>
+                                    <p>Trở thành Freelance Developer, làm việc với các dự án đa dạng</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Hiện tại</h4>
+                                    <p>Tiếp tục phát triển và học hỏi các công nghệ mới nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Kỹ năng & Công nghệ</h2>
+                    <p class="section-subtitle">Những công cụ và công nghệ tôi sử dụng để xây dựng ứng dụng hiện đại</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="backend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="category-title">Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">.NET Core</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RESTful APIs</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="frontend">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="category-title">Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Angular</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="database">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="category-title">Database & Cloud</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL Server</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Azure</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RavenDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="tools">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="category-title">Tools & Methodologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Agile/Scrum</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Clean Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Kinh nghiệm làm việc</h2>
+                    <p class="section-subtitle">Hành trình phát triển chuyên môn và những thành tựu đạt được</p>
+                </div>
+                
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="experience-item" data-year="2022">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2022 - Hiện tại</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Freelance Full Stack Developer</h3>
+                                <span class="company">Độc lập</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Dẫn dắt các dự án sáng tạo trong lĩnh vực social commerce, tự động hóa dữ liệu, 
+                                    và phát triển super app. Chuyên sâu về các giải pháp full-stack 
+                                    với công nghệ hiện đại và mô hình kiến trúc tiên tiến.
+                                </p>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">Nền tảng LiveCommerce</div>
+                                <div class="highlight-tag">Sun Group Super App</div>
+                                <div class="highlight-tag">Hệ thống thu thập dữ liệu</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2015">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2015 - 2022</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Full Stack Engineer</h3>
+                                <span class="company">Enlab Software</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Phát triển các ứng dụng cấp doanh nghiệp cho nhiều lĩnh vực bao gồm 
+                                    xây dựng, giáo dục, tự động hóa marketing, và quản lý bất động sản.
+                                </p>
+                                <ul class="job-responsibilities">
+                                    <li>Phát triển tính năng mới cho website khách hàng sử dụng HTML, CSS, JavaScript, Angular, ASP.NET Core</li>
+                                    <li>Xây dựng RESTful APIs và thiết kế database schema</li>
+                                    <li>Hợp tác với designers để chuyển đổi UI/UX wireframes thành code responsive</li>
+                                    <li>Tham gia quy trình phát triển Agile/Scrum</li>
+                                </ul>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">Hệ thống quản lý bất động sản</div>
+                                <div class="highlight-tag">Nền tảng tự động hóa marketing</div>
+                                <div class="highlight-tag">Hệ thống giáo dục</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" data-year="2012">
+                        <div class="experience-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-ring"></div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-period">2012 - 2015</div>
+                            <div class="experience-header">
+                                <h3 class="job-title">Học vấn</h3>
+                                <span class="company">Đại học Việt - Hàn</span>
+                            </div>
+                            <div class="job-description">
+                                <p>
+                                    Bằng cử nhân ngành Công nghệ thông tin và truyền thông. 
+                                    Tập trung vào các nguyên lý kỹ thuật phần mềm và công nghệ web hiện đại.
+                                </p>
+                            </div>
+                            <div class="job-highlights">
+                                <div class="highlight-tag">Kỹ thuật phần mềm</div>
+                                <div class="highlight-tag">Phát triển web</div>
+                                <div class="highlight-tag">Hệ thống cơ sở dữ liệu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Dự án nổi bật</h2>
+                    <p class="section-subtitle">Showcase các công việc gần đây và thành tựu kỹ thuật</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Featured Project -->
+                    <article class="project-card featured" data-project="property">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="Xem demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Mã nguồn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Hệ thống quản lý bất động sản</h3>
+                                <span class="project-year">2020-2022</span>
+                            </div>
+                            <p class="project-description">
+                                Hệ thống quản lý bất động sản tích hợp cho thị trường Úc. 
+                                Tối ưu hóa quy trình kinh doanh giữa Chủ sở hữu, Đại lý, và Người thuê 
+                                thông qua chuyển đổi số các quy trình giấy tờ truyền thống.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Vai trò</span>
+                                    <span class="detail-value">Lead Developer</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Nhóm</span>
+                                    <span class="detail-value">3 Developers</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Thời gian</span>
+                                    <span class="detail-value">18 tháng</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Azure</span>
+                                <span class="tech-badge">Google Maps API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Regular Projects -->
+                    <article class="project-card" data-project="marketing">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="Xem demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Mã nguồn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Nền tảng tự động hóa Marketing</h3>
+                                <span class="project-year">2017-2018</span>
+                            </div>
+                            <p class="project-description">
+                                Nền tảng tự động hóa marketing trên cloud cho việc thu hút khách hàng, 
+                                xây dựng lòng trung thành và quản lý danh tiếng thương hiệu.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="superapp">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="Xem demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Mã nguồn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Sun Group Super App</h3>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <p class="project-description">
+                                Nền tảng Mobile Super App chuyển đổi tập đoàn đa lĩnh vực thành 
+                                hệ sinh thái số thống nhất với kiến trúc microservices.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Microservices</span>
+                                <span class="tech-badge">Azure</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="livecommerce">
+                        <div class="project-visual">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#" class="project-link" data-tooltip="Xem demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="#" class="project-link" data-tooltip="Mã nguồn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Nền tảng LiveCommerce</h3>
+                                <span class="project-year">2021-2023</span>
+                            </div>
+                            <p class="project-description">
+                                Nền tảng social commerce giúp doanh nghiệp giới thiệu sản phẩm thông qua 
+                                live streaming với tương tác khách hàng real-time.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React.js</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">RavenDB</span>
+                                <span class="tech-badge">WebRTC</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Liên hệ</h2>
+                    <p class="section-subtitle">Sẵn sàng hợp tác và tạo ra những điều tuyệt vời</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <h3>Hãy cùng nhau xây dựng điều gì đó tuyệt vời!</h3>
+                            <p>
+                                Tôi luôn hào hứng với những cơ hội mới và dự án thú vị. Dù bạn có ý tưởng cụ thể 
+                                hay chỉ muốn trò chuyện về công nghệ, đừng ngần ngại liên hệ với tôi!
+                            </p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:tranvantuanit210@gmail.com" class="method-value">
+                                        tranvantuanit210@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Điện thoại</span>
+                                    <a href="tel:+84344446301" class="method-value">
+                                        +84 344 446 301
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Địa điểm</span>
+                                    <span class="method-value">
+                                        Đà Nẵng, Việt Nam
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h4>Kết nối với tôi</h4>
+                            <div class="social-links">
+                                <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email" data-magnetic>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="tel:+84344446301" class="social-link" data-tooltip="Điện thoại" data-magnetic>
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn" data-magnetic>
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub" data-magnetic>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link" data-tooltip="Twitter" data-magnetic>
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <h4>Gửi tin nhắn</h4>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Họ và tên</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="subject" name="subject" required>
+                                    <label for="subject">Chủ đề</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                    <label for="message">Tin nhắn</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" data-magnetic>
+                                <span class="btn-text">Gửi tin nhắn</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                <div class="btn-bg"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <span class="logo-text">T</span>
+                        <div class="logo-orbit">
+                            <div class="orbit-ring"></div>
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                    <span class="brand-name">Tuấn Trần</span>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Điều hướng</h4>
+                        <ul>
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#about">Giới thiệu</a></li>
+                            <li><a href="#skills">Kỹ năng</a></li>
+                            <li><a href="#experience">Kinh nghiệm</a></li>
+                            <li><a href="#projects">Dự án</a></li>
+                            <li><a href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Dịch vụ</h4>
+                        <ul>
+                            <li><a href="#">Phát triển Web</a></li>
+
+                            <li><a href="#">Phát triển API</a></li>
+                            <li><a href="#">Kiến trúc hệ thống</a></li>
+                            <li><a href="#">Tư vấn kỹ thuật</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Liên hệ</h4>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-envelope"></i> tranvantuanit210@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +84 344 446 301</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Đà Nẵng, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Tuấn Trần. Thiết kế và phát triển với <span class="heart">❤️</span> và <span class="coffee">☕</span></p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:tranvantuanit210@gmail.com" class="social-link" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tranvantuanit210/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/tvtdev94/" target="_blank" rel="noopener noreferrer" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
